@@ -1,0 +1,48 @@
+import { StyleSheet } from 'react-native';
+import { getBottomSpace } from 'react-native-iphone-x-helper';
+import { COLORS, FONTS } from '../../theme';
+
+export const styles = StyleSheet.create({
+  container: {
+    width:'100%',
+    backgroundColor: COLORS.BLACK_TERTIARY,
+    paddingBottom: getBottomSpace()+ 16,
+    paddingTop: 16,
+    paddingHorizontal: 24,
+  },
+  options:{
+    flexDirection:'row',
+    justifyContent:'space-between',
+    alignItems:'center',
+    marginBottom:16
+    
+  },
+  input:{
+    width:'100%',
+    height: 68, 
+    textAlignVertical: 'top', 
+    color: COLORS.WHITE,
+  
+  },
+  collapsedInput:{
+    width:'100%',
+    height: 30, 
+    textAlignVertical: 'center', 
+    color: COLORS.WHITE,
+
+  },
+  suggestionsContainer:{
+    marginBottom:50,
+    height:50,
+    
+  },
+  suggestion:{
+    flexDirection:'row',
+    justifyContent:'space-between',
+    padding:12,
+    borderBottomWidth:1,
+    borderBottomColor:COLORS.GRAY_PRIMARY
+
+    
+  }
+});
